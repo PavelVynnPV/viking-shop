@@ -1,0 +1,228 @@
+header {
+    width: 100%;
+}
+nav {
+    background-color: #000;
+    width: 100%;
+    padding: 30px 0;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+.header_bg {
+    background-image: url(../images/nav/asgard_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+}
+.search_icon {
+    background-image: url(../images/nav/search_icon.svg);
+}
+.cart_icon {
+    background-image: url(../images/nav/cart_icon.svg);
+    position: relative;
+}
+.acc_icon {
+    background-image: url(../images/nav/acc_icon.svg);
+}
+.cart_icon::after {
+    content: "";
+    width: 2px;
+    height: 100%;
+    background-color: #fff;
+    top: 0;
+    right: -2px;
+    position: absolute;
+}
+.cart_acc_icon {
+    display: flex;
+    gap: 10px;
+}
+
+.items_in_cart_quantity{
+    position: absolute;
+    right: 3px;
+    bottom: -2px;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.unActive {
+    display: none;
+}
+.search_icon, .cart_icon, .acc_icon {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+}
+.cart_icon, .acc_icon {
+    width: 35px;
+    height: 30px;
+}
+.logo {
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 300px;
+    height: 50px;
+    cursor: pointer;
+}
+.nav_content {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.logo_bar, .nav_list {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+.logo_bar {
+    justify-content: space-between;
+}
+.nav_list {
+    gap: 25px;
+}
+.nav_list a {
+    color: #fff;
+    position: relative;
+}
+.nav_list a::after {
+    content: " ";
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    transition: .8s all ease;
+}
+.nav_list a:hover::after {
+  content: " ";
+  width: 100%;
+}
+.header_bg_name {
+    letter-spacing: 10px;
+    position: relative;
+    margin-bottom: 27px;
+}
+
+.swords {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.leftSword, .rightSword {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 40px;
+    position: absolute;
+}
+.rightSword {
+    top: -26px;
+    left: -35px;
+    z-index: -1;
+    background-image: url(../images/nav/sword_ic_left.png);
+}
+.leftSword {
+    background-image: url(../images/nav/sword_ic.png);
+    z-index: 1;
+}
+
+
+/* MODAL */
+
+.acc_modal {
+    position: fixed;
+    top: 17vh;
+    left: 36%;
+    z-index: 5;
+    background-color: #000;
+    padding: 30px;
+    width: 400px;
+    height: 500px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    flex-direction: column;
+}
+.acc_close_btn {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    display: flex;
+    background-image: url(../images/nav/close_btn.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.acc_logo {
+    background-image: url(../images/logo.png);
+    width: 70px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 50px;
+}
+.acc_modal__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.acc_modal__form>label{
+    margin-bottom: 5px;
+}
+.acc_modal__form>input{
+    margin-bottom: 15px;
+    outline: none;
+    padding: 5px;
+    font-size: 15px;
+}
+.sign_up_btn {
+    margin-top: 50px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid #fff;
+    transition: 0.5s all ease;
+}
+.sign_up_btn:hover {
+    background-color: #494949;
+    color: #fff;
+}
+.acc_dark_bg {
+    width: 100%;
+    height: 100vh;
+    background-color: #0000003a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 4;
+}
+.acc_unActive {
+    display: none;
+}

@@ -1,0 +1,180 @@
+main {
+  background-color: #000;
+  color: #fff;
+}
+.main__content {
+  width: 1200px;
+  margin: auto;
+}
+.main__dark_block_cloth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  padding: 70px 0 40px;
+}
+.odin_title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.odin_says {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(170, 170, 170);
+}
+.main__top_title {
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+.main__cloth_block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+.main__dark_block_cloth > .main__cloth_block:nth-child(2n + 1) {
+  flex-direction: row-reverse;
+}
+.cloth_text {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  gap: 35px;
+  text-align: center;
+  margin: auto;
+  width: 500px;
+}
+.cloth__title {
+  font-size: 40px;
+  text-transform: capitalize;
+  margin: 0 0 0px 0;
+  font-weight: 300;
+}
+.cloth__under_title {
+  color: rgba(255, 255, 255, 0.75);
+}
+.cloth__btn {
+  padding: 15px 25px;
+  border: 1px solid rgba(255, 255, 255, 0.418);
+  color: #fff;
+  font-size: 14px;
+  margin: auto;
+  text-align: center;
+}
+.cloth__btn:hover {
+  transform: scale(1.02);
+}
+.asgard_cloth_img {
+  width: 500px;
+}
+
+.main__buy_top_cloth {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 100%;
+  justify-content: center;
+  background-color: #fff;
+  padding: 150px 0;
+}
+.main__buy_top_cloth > .main__content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+.buy_top__item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 550px;
+  cursor: pointer;
+  color: #000;
+  padding: 10px 15px;
+  border-radius: 15px;
+}
+.buy_top__item:hover {
+  box-shadow: 0px 0px 15px #000;
+}
+.buy_top__price {
+  font-size: 14px;
+}
+.buy_top__title {
+  margin: 10px 0;
+}
+.buy_top__cloth_img_odin,
+.buy_top__cloth_img_thor,
+.buy_top__cloth_img_tyr,
+.buy_top__cloth_img_loki {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 600px;
+}
+.buy_top__cloth_img_odin {
+  background-image: url(../images/asgard_main/odin_buy_back.jpg);
+}
+.buy_top__cloth_img_odin:hover {
+  background-image: url(../images/asgard_main/odin_buy.jpg);
+}
+
+.buy_top__cloth_img_thor {
+  background-image: url(../images/asgard_main/thor_buy.jpg);
+}
+.buy_top__cloth_img_thor:hover {
+  background-image: url(../images/asgard_main/thor_buy_back.jpg);
+}
+
+.buy_top__cloth_img_tyr {
+  background-image: url(../images/asgard_main/tyr_buy.jpg);
+}
+.buy_top__cloth_img_tyr:hover {
+  background-image: url(../images/asgard_main/tyr_buy_back.jpg);
+}
+
+.buy_top__cloth_img_loki {
+  background-image: url(../images/asgard_main/loki_buy.jpg);
+}
+.buy_top__cloth_img_loki:hover {
+  background-image: url(../images/asgard_main/loki_buy_back.jpg);
+}
+
+
+.main_all_cloth_for_buy {
+  background-color: #fff;
+  width: 100%;
+  padding: 150px 0;
+}
+.main__buy_items_block {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 30px;
+}
+.cloth_for_buy__item {
+  max-width: 270px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  color: #000;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+.cloth_img_with_hover {
+  display: none;
+}
+.god_name, .god_cloth_price {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+.god_cloth_price {
+  font-size: 14px;
+}

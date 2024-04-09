@@ -1,0 +1,169 @@
+.info_item {
+  width: 100%;
+  padding: 100px 0;
+}
+.info_item__content {
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  gap: 100px;
+  position: relative;
+}
+.info__images_block {
+  flex-shrink: 0;
+  max-width: 427px;
+}
+.info__images_container {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.info__main_img {
+  width: 100%;
+}
+.info__mini_img {
+  display: flex;
+  gap: 20px;
+}
+.info__mini_img img {
+  width: 100px;
+  cursor: pointer;
+}
+.info__addToCart_block {
+  width: 100%;
+}
+.info__name {
+  font-weight: 400;
+  margin: 0;
+}
+.info__price {
+  font-size: 18px;
+  margin: 10px 0;
+}
+.info__shiping {
+  font-size: 14px;
+  color: rgb(66, 66, 66);
+}
+.info__shiping u {
+  color: #000;
+}
+.info__size_title {
+  margin-top: 35px;
+  font-size: 18px;
+}
+
+.info__size_btns_block {
+  max-width: 750px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.btn_size span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 36px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 1px solid #6d6d6d;
+  border-radius: 40%;
+  color: #000;
+  cursor: pointer;
+}
+.btn_size input[type="radio"]:checked ~ span.active_size_btn {
+  background: #000;
+  border-radius: 40%;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.unActive {
+  display: none;
+}
+
+.info__quantity_btns {
+  border: 1px solid #000;
+  width: 150px;
+  font-size: 20px;
+  justify-content: space-between;
+  display: flex;
+  margin: 15px 0 20px;
+  align-items: center;
+}
+.info__quantity_btns span:nth-child(2) {
+  padding: 0 13px;
+}
+.info__quantity_btns button:nth-child(2n + 1) {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  padding: 15px;
+  transition: 0.3s all ease;
+}
+.info__quantity_btns button:nth-child(2n + 1):hover {
+  background-color: #8b8b8b;
+  color: #fff;
+}
+.addtocart_btn, .delete_from_cart_btn {
+  background-color: transparent;
+  width: 100%;
+  padding: 20px 0;
+  font-size: 16px;
+  border: 1px solid rgb(151, 151, 151);
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+.delete_from_cart_btn {
+  background-color: #000;
+  color: #fff;
+}
+.addtocart_btn:hover {
+  box-shadow: 0px 0px 5px rgb(151, 151, 151);
+}
+
+.info__mithic_info {
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 1px;
+}
+.info__cloth_characteristics {
+  list-style: initial;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.info__note {
+  letter-spacing: 1px;
+  line-height: 23px;
+}
+.info__note_bold  {
+  font-size: 18px;
+  font-weight: bold;
+}
+.info__size_guide {
+  border: 1px solid rgb(151, 151, 151);
+  max-width: 300px;
+}
+.info__size_guide li {
+  display: flex;
+  border-bottom: 1px solid rgb(151, 151, 151);
+}
+.info__size_guide li > span {
+  width: 100px;
+  padding: 10px 0 10px 15px;
+}
+.info__size_guide li > span:nth-child(-n + 2) {
+  border-right: 1px solid rgb(151, 151, 151);
+}
+.info__size_guide li:nth-last-child(1) {
+  border-bottom: none;
+}
